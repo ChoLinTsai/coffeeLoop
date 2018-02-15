@@ -155,7 +155,7 @@ module.exports = {
 		// new webpack.HotModuleReplacementPlugin(),
 		// new webpack.NamedModulesPlugin(),
 		new HtmlWebpackPlugin({
-			title: 'Webpack Template',
+			title: 'Coffee Loop',
 			template: './src/index.html',
 			hash: false,
 			minify: {
@@ -167,9 +167,9 @@ module.exports = {
 			// disable: !isProd,
 			allChunks: true
 		}),
-		new webpack.DefinePlugin({
-    	myAPI: JSON.stringify(myEnv.parsed.myAPI),
-  	}),
+		// new webpack.DefinePlugin({
+    // 	myAPI: JSON.stringify(myEnv.parsed.myAPI),
+  	// }),
 		// new PurifyCSSPlugin({
     //   paths: glob.sync(path.join(__dirname, 'src/*.html')),
     // }),
