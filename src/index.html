@@ -1,35 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title><%= htmlWebpackPlugin.options.title %></title>
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
 </head>
+
 <body>
+	<div id="main-wrap">
+		<header id="header-section">
+			<nav id="header-nav">
+				<a href="" id="menu-btn">
+					<span id="line-1" class="menu-line"></span>
+					<span id="line-2" class="menu-line"></span>
+					<span id="line-3" class="menu-line"></span>
+				</a>
+			</nav>
 
-	<header id="header-section">
-		<nav id="header-nav">
-			<a href="" id="menu-btn">
-				<span id="line-1" class="menu-line"></span>
-				<span id="line-2" class="menu-line"></span>
-				<span id="line-3" class="menu-line"></span>
-			</a>
-		</nav>
+			<div id="header-content-wrap">
 
-		<div id="header-content-1">
-			<h1 class="text-left">Coffee</h1>
-			<h1 class="text-right">Loop</h1>
-		</div>
+				<div id="header-content-1">
+					<h1 class="text-left">Coffee</h1>
+					<h1 class="text-right">Loop</h1>
+				</div>
 
-		<div id="header-content-2">
+				<div id="header-content-2">
+					<div class="wrap">
+							<ul>
+								<li class="li-shop-name">Coffee shop 1</li>
+								<li class="li-shop-name">Coffee shop 2</li>
+								<li class="li-shop-name">Coffee shop 3</li>
+								<li class="li-shop-name">Coffee shop 4</li>
+								<li class="li-shop-name">Coffee shop 5</li>
+							</ul>
+					</div>
+				</div>
+			</div>
 
-		</div>
+			<div id="header-footer">
+				<p>&copy; Coffee Loop </p>
+			</div>
+		</header>
 
-		<div id="header-footer">
-			<p>Copyright &copy; Coffee Loop </p>
-		</div>
-	</header>
+		<figure id="figure-section"></figure>
+
+		<main id="main-section">
+
+			<section id="main-header">
+				<h1 id="main-shop-name">Verve Coffee</h1>
+				<h2 id="main-shop-location">8925 Melrose Avenue West Hollywood, CA 90069</h2>
+			</section>
+
+			<section id="main-body">
+				<h3>Coffee Choice</h3>
+					<ul>
+						<li>House Special</li>
+						<li>Black / Americano</li>
+						<li>Latte</li>
+						<li>Mocha</li>
+						<li>Cappuccino</li>
+						<ul>
+							<li>this is a normal coffee</li>
+							<li>this is a normal coffee</li>
+							<li>this is a normal coffee</li>
+						</ul>
+					</ul>
+			</section>
+
+			<section id="main-footer">
+				<button id="order-btn" type="button" name="button">Uber Eats</button>
+				<ul id="social-icons">
+					<li>
+						<a target="_blank" href="https://google.com">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<i class="fa fa-snapchat-square" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+		</main>
+
+	</div>
 
 </body>
+
 </html>
