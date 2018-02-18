@@ -1,26 +1,43 @@
 header#header-section {
 	@include wh(normal, $header-width, 100%);
-	flex:1;
+	flex: 1;
 	position: relative;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+
 	nav#header-nav {
 		@include flex(flex-start, center);
 		@include wh(normal, $header-width, 10%);
 		position: relative;
 		background: #ECFAFB;
+
 		a#menu-btn {
+			@include wh(normal, 3rem, 3rem);
+			cursor: pointer;
 			position: relative;
 			left: 1rem;
-			@include wh(normal, 2rem, 1.5rem);
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+
 			span.menu-line {
+				margin-top: 5px;
+				margin-bottom: 5px;
 				position: relative;
 				@include wh(normal, 2rem, 2px);
-				background: #343434;
+				background: $header-primary-color;
+				transition: all 0.25s cubic-bezier(.1,-1.5,.5,2.5);
+			}
+
+			div.bg {
+				position: absolute;
+				width: 3rem;
+				height: 100%;
+				background: $header-primary-color;
+				transform: translateX(-100%);
 			}
 		}
 	}
@@ -29,6 +46,7 @@ header#header-section {
 		@include wh(normal, $header-width, 85%);
 		position: relative;
 		overflow: hidden;
+
 		div#header-content-1 {
 			@include wh(normal, $header-width, 100%);
 			position: absolute;
@@ -37,8 +55,11 @@ header#header-section {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			transition: all 0.3s ease-in-out;
+
 			h1 {
 				font-size: 3rem;
+				color: #333;
 			}
 		}
 
@@ -46,29 +67,90 @@ header#header-section {
 			@include wh(normal, $header-width, 100%);
 			position: absolute;
 			z-index: 2;
-			background: goldenrod;
+			background: $header-primary-color;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			transform: translateX(-100%);
+			transition: all 0.3s ease-in-out;
+
+			a#close-btn {
+				@include wh(normal, 3rem, 3rem);
+				@include flex;
+				cursor: pointer;
+				position: absolute;
+				right: 1rem;
+				top: 1rem;
+
+				p {
+					margin: 0;
+					font-size: 3rem;
+					color: #fff;
+				}
+			}
+
 			div.wrap {
 				ul {
 					li {
-						color: red;
+						color: #fdfdfd;
 						list-style: none;
 					}
 				}
 			}
 		}
 	}
+
 	div#header-footer {
 		@include flex(center, center);
 		@include wh(normal, $header-width, 5%);
 		position: relative;
 		background: #ECFAFB;
+
 		p {
 			margin: 0;
-			color: #8D6262;
+			color: $header-primary-color;
 		}
+	}
+}
+@keyframes bgFill {
+	0% {
+		transform: translateX(-50%);
+	}
+
+	25% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+@keyframes bgUnFill {
+	0% {
+		transform: translateX(50%);
+	}
+
+	25% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
 	}
 }
