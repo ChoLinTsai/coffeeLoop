@@ -1,27 +1,19 @@
 header#header-section {
 	@include wh(normal, $header-width, 100%);
-	flex:1;
+	flex: 1;
 	position: relative;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	nav#header-nav {
-		@include flex(flex-start, center);
-		@include wh(normal, $header-width, 10%);
+
+	div#header-nav {
+		@include flex(center, center);
+		@include wh(normal, $header-width, 15%);
 		position: relative;
 		background: #ECFAFB;
-		a#menu-btn {
-			position: relative;
-			left: 1rem;
-			@include wh(normal, 2rem, 1.5rem);
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			span.menu-line {
-				position: relative;
-				@include wh(normal, 2rem, 2px);
-				background: #343434;
-			}
+
+		h1 {
+			font-size: 2rem;
 		}
 	}
 
@@ -29,46 +21,90 @@ header#header-section {
 		@include wh(normal, $header-width, 85%);
 		position: relative;
 		overflow: hidden;
+
 		div#header-content-1 {
 			@include wh(normal, $header-width, 100%);
-			position: absolute;
-			z-index: 1;
-			background: #fdfdfd;
+			position: relative;
+			background: #fff;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			h1 {
-				font-size: 3rem;
-			}
-		}
 
-		div#header-content-2 {
-			@include wh(normal, $header-width, 100%);
-			position: absolute;
-			z-index: 2;
-			background: goldenrod;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			transform: translateX(-100%);
-			div.wrap {
+			div#ul-wrap {
+				@include wh(normal, 100%, 20rem);
+				@include flex;
+
 				ul {
-					li {
-						color: red;
-						list-style: none;
+					margin: 0;
+					padding: 0;
+
+					a {
+						display: block;
+						text-decoration: none;
+						margin-bottom: 1rem;
+
+						li.li-shop-name {
+							color: #333;
+							list-style: none;
+							font-size: 1.25rem;
+						}
 					}
 				}
 			}
 		}
 	}
+
 	div#header-footer {
 		@include flex(center, center);
 		@include wh(normal, $header-width, 5%);
 		position: relative;
 		background: #ECFAFB;
+
 		p {
 			margin: 0;
-			color: #8D6262;
+			color: #333;
 		}
+	}
+}
+@keyframes bgFill {
+	0% {
+		transform: translateX(-50%);
+	}
+
+	25% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+@keyframes bgUnFill {
+	0% {
+		transform: translateX(50%);
+	}
+
+	25% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
 	}
 }
