@@ -6,39 +6,14 @@ header#header-section {
 	display: flex;
 	flex-direction: column;
 
-	nav#header-nav {
-		@include flex(flex-start, center);
-		@include wh(normal, $header-width, 10%);
+	div#header-nav {
+		@include flex(center, center);
+		@include wh(normal, $header-width, 15%);
 		position: relative;
 		background: #ECFAFB;
 
-		a#menu-btn {
-			@include wh(normal, 3rem, 3rem);
-			cursor: pointer;
-			position: relative;
-			left: 1rem;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			overflow: hidden;
-
-			span.menu-line {
-				margin-top: 5px;
-				margin-bottom: 5px;
-				position: relative;
-				@include wh(normal, 2rem, 2px);
-				background: $header-primary-color;
-				transition: all 0.25s cubic-bezier(.1,-1.5,.5,2.5);
-			}
-
-			div.bg {
-				position: absolute;
-				width: 3rem;
-				height: 100%;
-				background: $header-primary-color;
-				transform: translateX(-100%);
-			}
+		h1 {
+			font-size: 2rem;
 		}
 	}
 
@@ -49,51 +24,30 @@ header#header-section {
 
 		div#header-content-1 {
 			@include wh(normal, $header-width, 100%);
-			position: absolute;
-			z-index: 1;
-			background: #fdfdfd;
+			position: relative;
+			background: #fff;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			transition: all 0.3s ease-in-out;
 
-			h1 {
-				font-size: 3rem;
-				color: #333;
-			}
-		}
-
-		div#header-content-2 {
-			@include wh(normal, $header-width, 100%);
-			position: absolute;
-			z-index: 2;
-			background: $header-primary-color;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			transform: translateX(-100%);
-			transition: all 0.3s ease-in-out;
-
-			a#close-btn {
-				@include wh(normal, 3rem, 3rem);
+			div#ul-wrap {
+				@include wh(normal, 100%, 20rem);
 				@include flex;
-				cursor: pointer;
-				position: absolute;
-				right: 1rem;
-				top: 1rem;
 
-				p {
-					margin: 0;
-					font-size: 3rem;
-					color: #fff;
-				}
-			}
-
-			div.wrap {
 				ul {
-					li {
-						color: #fdfdfd;
-						list-style: none;
+					margin: 0;
+					padding: 0;
+
+					a {
+						display: block;
+						text-decoration: none;
+						margin-bottom: 1rem;
+
+						li.li-shop-name {
+							color: #333;
+							list-style: none;
+							font-size: 1.25rem;
+						}
 					}
 				}
 			}
@@ -108,7 +62,7 @@ header#header-section {
 
 		p {
 			margin: 0;
-			color: $header-primary-color;
+			color: #333;
 		}
 	}
 }
