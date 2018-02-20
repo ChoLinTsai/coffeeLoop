@@ -1,3 +1,9 @@
+import shop1img from '../img/coffee-shop-1.jpg';
+import shop2img from '../img/coffee-shop-2.jpg';
+import shop3img from '../img/coffee-shop-3.jpg';
+import shop4img from '../img/coffee-shop-4.jpg';
+import shop5img from '../img/coffee-shop-5.jpg';
+
 const coffeeShop1 = {
   name: 'Verve',
   location: '8925 Melrose Avenue West Hollywood, CA 90069',
@@ -9,7 +15,7 @@ const coffeeShop1 = {
     "Cappuccino",
     "Espresso"
   ],
-  figure: "../img/coffee-shop-1.jpg",
+  figure: shop1img,
   socialLinks: {
     facebook: "https://www.facebook.com/vervecoffee",
     instagram: "https://www.instagram.com/vervecoffee/",
@@ -30,7 +36,7 @@ const coffeeShop2 = {
     "Macchiato",
     "Affogato"
   ],
-  figure: "../img/coffee-shop-2.jpg",
+  figure: shop2img,
   socialLinks: {
     facebook: "https://www.facebook.com/bluebottlecoffee",
     instagram: "https://www.instagram.com/bluebottle/",
@@ -50,7 +56,7 @@ const coffeeshop3 = {
     "Espresso",
     "Macchiato"
   ],
-  figure: "../img/coffee-shop-3.jpg",
+  figure: shop3img,
   socialLinks: {
     facebook: "https://www.facebook.com/fabryka.kavy.che/",
     instagram: "https://www.instagram.com/fabryka_kavy_ck/",
@@ -71,7 +77,7 @@ const coffeeshop4 = {
     "Espresso",
     "Macchiato"
   ],
-  figure: "../img/coffee-shop-4.jpg",
+  figure: shop4img,
   socialLinks: {
     facebook: "https://www.facebook.com/bdcoffeehouse",
     instagram: "https://www.instagram.com/bdcoffeehouse/",
@@ -92,7 +98,7 @@ const coffeeshop5 = {
     "Cortado",
     "Cappuccino"
   ],
-  figure: "../img/coffee-shop-5.jpg",
+  figure: shop5img,
   socialLinks: {
     facebook: "https://www.facebook.com/cocobeancoffee",
     instagram: "https://twitter.com/cocobeancoffee",
