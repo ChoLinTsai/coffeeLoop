@@ -2,14 +2,14 @@ const coffeeShop1 = {
   name: 'Verve',
   location: '8925 Melrose Avenue West Hollywood, CA 90069',
   menu: [
-    "House Speical",
+    "Verve Speical",
     "Black / Americano",
     "Latte",
     "Mocha",
     "Cappuccino",
     "Espresso"
   ],
-  figure: "./img/coffee-shop-1.jpg",
+  figure: "../img/coffee-shop-1.jpg",
   socialLinks: {
     facebook: "https://www.facebook.com/vervecoffee",
     instagram: "https://www.instagram.com/vervecoffee/",
@@ -20,7 +20,7 @@ const coffeeShop1 = {
 
 const coffeeShop2 = {
   name: 'Blue Bottle',
-  location: '2 S Park St, San Francisco, CA 94107美國',
+  location: '2 S Park St, San Francisco, CA 94107',
   menu: [
     "Blue Speical",
     "Caffè Latte",
@@ -30,7 +30,7 @@ const coffeeShop2 = {
     "Macchiato",
     "Affogato"
   ],
-  figure: "./img/coffee-shop-2.jpg",
+  figure: "../img/coffee-shop-2.jpg",
   socialLinks: {
     facebook: "https://www.facebook.com/bluebottlecoffee",
     instagram: "https://www.instagram.com/bluebottle/",
@@ -50,7 +50,7 @@ const coffeeshop3 = {
     "Espresso",
     "Macchiato"
   ],
-  figure: "./img/coffee-shop-3.jpg",
+  figure: "../img/coffee-shop-3.jpg",
   socialLinks: {
     facebook: "https://www.facebook.com/fabryka.kavy.che/",
     instagram: "https://www.instagram.com/fabryka_kavy_ck/",
@@ -71,7 +71,7 @@ const coffeeshop4 = {
     "Espresso",
     "Macchiato"
   ],
-  figure: "./img/coffee-shop-4.jpg",
+  figure: "../img/coffee-shop-4.jpg",
   socialLinks: {
     facebook: "https://www.facebook.com/bdcoffeehouse",
     instagram: "https://www.instagram.com/bdcoffeehouse/",
@@ -92,7 +92,7 @@ const coffeeshop5 = {
     "Cortado",
     "Cappuccino"
   ],
-  figure: "./img/coffee-shop-5.jpg",
+  figure: "../img/coffee-shop-5.jpg",
   socialLinks: {
     facebook: "https://www.facebook.com/cocobeancoffee",
     instagram: "https://twitter.com/cocobeancoffee",

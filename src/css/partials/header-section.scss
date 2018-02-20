@@ -32,13 +32,14 @@ header#header-section {
 
 			div#ul-wrap {
 				@include wh(normal, 100%, 20rem);
-				@include flex;
-
+				@include flex(flex-end,center);
+				padding-right: 1rem;
 				ul {
 					margin: 0;
 					padding: 0;
 
 					a {
+						cursor: pointer;
 						display: block;
 						text-decoration: none;
 						margin-bottom: 1rem;
@@ -47,6 +48,8 @@ header#header-section {
 							color: #333;
 							list-style: none;
 							font-size: 1.25rem;
+							letter-spacing: 2.5px;
+							text-align: right;
 						}
 					}
 				}

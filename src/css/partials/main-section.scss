@@ -16,11 +16,11 @@ main#main-section {
 		justify-content: center;
 		color: #ECFAFB;
 
-		h1 {
+		h1#main-shop-name {
 			font-size: 4rem;
 		}
 
-		h2 {
+		h2#main-shop-location {
 			font-size: 1.5rem;
 			letter-spacing: 2px;
 		}
@@ -36,9 +36,11 @@ main#main-section {
 			font-size: 2.5rem;
 		}
 
-		ul {
+		ul#main-coffee-choice {
 			li {
 				font-size: 1.5rem;
+				letter-spacing: 2.5px;
+				margin-bottom: 1rem;
 			}
 		}
 	}
@@ -71,6 +73,7 @@ main#main-section {
 			padding: 0;
 			li {
 				display: inline-block;
+				margin: 1rem;
 				a {
 					display: inline-block;
 					transition: 0.25s all ease-in-out;
@@ -80,7 +83,6 @@ main#main-section {
 					i {
 						font-size: 4rem;
 						color: #fff;
-						margin: 1rem;
 					}
 				}
 			}
