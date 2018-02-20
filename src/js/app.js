@@ -75,8 +75,6 @@ function getCafeContent(index) {
     let [x, y] = i;
     x.href = y;
   })
-
-  getFigMove();
 }
 
 $event(window, 'DOMContentLoaded', getCafeContent(getRandomShopIndex), false);
@@ -90,45 +88,52 @@ liShopNames.map(i => $event(i, 'click', () => {
   liShopNames[getCurrentIndex].style.color = '#333';
 
   getCafeContent(getClickedIndex);
+
   return getCurrentIndex = getClickedIndex;
 }));
 
+//
+// function getFigMove() {
+//   let figPosition = 0;
+//   setTimeout(() => {
+// 		  let setloopToRight = setInterval( () => {
+//
+// 		    if (figPosition >= 99) {
+// 		      clearInterval(setloopToRight);
+// 		      setTimeout(() => loopToLeft(figPosition), 300);
+// 		    }
+// 		    getfig.style.backgroundPosition = `${figPosition}% center`;
+// 		    figPosition = figPosition + 0.1
+//
+// 		  }, 10)
+//   }, 500)
+// }
 
-
-
-
-function getFigMove() {
-  let figPosition = 0;
-  setTimeout(() => {
-		loopToRight(figPosition);
-  }, 500)
-}
-
-function loopToRight(figPosition) {
-
-	let setloopToRight = setInterval(() => {
-
-		if (figPosition >= 99) {
-			clearInterval(setloopToRight);
-			setTimeout(() => loopToLeft(figPosition), 300);
-		}
-
-		getfig.style.backgroundPosition = `${figPosition}% center`;
-		figPosition = figPosition + 0.1
-
-	}, 10)
-
-}
-
-function loopToLeft(figPosition) {
-
-	let setloopToLeft = setInterval(() => {
-
-		if (figPosition <= 0) {
-			clearInterval(setloopToLeft);
-			setTimeout(() => loopToRight(figPosition), 300);
-		}
-		getfig.style.backgroundPosition = `${figPosition}% center`;
-		figPosition = figPosition - 0.1
-	}, 10)
-}
+// function loopToRight(figPosition) {
+//
+//   let setloopToRight = setInterval( () => {
+//
+//     if (figPosition >= 99) {
+//       clearInterval(setloopToRight);
+//       setTimeout(() => loopToLeft(figPosition), 300);
+//     }
+//
+//     getfig.style.backgroundPosition = `${figPosition}% center`;
+//     figPosition = figPosition + 0.1
+//
+//   }, 10)
+//
+// }
+//
+// function loopToLeft(figPosition) {
+//
+//   let setloopToLeft = setInterval(() => {
+//
+//     if (figPosition <= 0) {
+//       clearInterval(setloopToLeft);
+//       setTimeout(() => loopToRight(figPosition), 300);
+//     }
+//     getfig.style.backgroundPosition = `${figPosition}% center`;
+//     figPosition = figPosition - 0.1
+//   }, 10)
+// }

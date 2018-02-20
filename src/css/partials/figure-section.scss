@@ -6,4 +6,15 @@ figure#figure-section {
 	background-repeat: no-repeat;
 	background-position: 0% center;
 	background-size: cover;
+	animation: loopBg 9s ease-in-out alternate infinite;
+}
+
+
+@keyframes loopBg {
+	0% {
+		background-position: 0% center;
+	}
+	100% {
+		background-position: 100% center;
+	}
 }
