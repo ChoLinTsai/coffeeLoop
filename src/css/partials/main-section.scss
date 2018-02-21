@@ -18,11 +18,13 @@ main#main-section {
 
 		h1#main-shop-name {
 			font-size: 4rem;
+			letter-spacing: 2px;
 		}
 
 		h2#main-shop-location {
 			font-size: 1.5rem;
 			letter-spacing: 2px;
+			line-height: 1.5;
 		}
 	}
 
@@ -34,6 +36,7 @@ main#main-section {
 
 		h3 {
 			font-size: 2.5rem;
+			margin-bottom: 2rem;
 		}
 
 		ul#main-coffee-choice {
@@ -47,41 +50,30 @@ main#main-section {
 
 	section#main-footer {
 		flex: 1;
+		max-height: 85px;
 		background: #81CBC8;
+		padding: 1rem;
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		button#order-btn {
-			@include wh(normal, 200px, 60px);
-			@include flex(center,center);
-			font-size: 2rem;
-			color: #fff;
-			background: #81CBC8;
-			border: 2px solid #fff;
-			outline: none;
-			border-radius: 10px;
-			cursor: pointer;
-			letter-spacing: 2px;
-			transition: 0.35s all ease-in-out;
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
+		justify-content: flex-end;
 
 		ul#social-icons {
 			margin: 0;
 			padding: 0;
+			@include flex;
 			li {
 				display: inline-block;
 				margin: 1rem;
+
 				a {
 					display: inline-block;
 					transition: 0.25s all ease-in-out;
+
 					&:hover {
 						transform: scale(1.15);
 					}
+
 					i {
-						font-size: 4rem;
+						font-size: 3.5rem;
 						color: #fff;
 					}
 				}

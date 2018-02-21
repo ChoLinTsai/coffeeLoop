@@ -24,8 +24,9 @@ function $event(x, y, z, i) {
 
 // make a 2d array
 function get2dArray(x, y) {
-  let resultArray = [];
-  for (let i = 0; i < x.length; i++) {
+  let resultArray = [],
+			maxLength = x.length;
+  for (let i = 0; i < maxLength; i += 1) {
     resultArray.push([
       x[i], y[i]
     ]);
@@ -35,24 +36,24 @@ function get2dArray(x, y) {
 
 // set liShopNames as array of .li-shop-name and other elements
 const liShopNames = [...$selectAll('.li-shop-name')],
-  getfig = $select('#figure-section'),
-  getMainShopName = $select('#main-shop-name'),
-  getMainShopLocation = $select('#main-shop-location'),
-  getMenu = $select('#main-coffee-choice'),
-  getSocialLinksEles = [...$selectAll('.social-links')],
-  // get liShopNames and coffeeShops(import from shop.js) into 2d array
-  getCoffeeShopNames = get2dArray(liShopNames, coffeeShops),
-  getRandomShop = coffeeShops[Math.floor(Math.random() * coffeeShops.length)],
-  // get random shop's index
-  getRandomShopIndex = coffeeShops.indexOf(getRandomShop);
+			getfig = $select('#figure-section'),
+			getMainShopName = $select('#main-shop-name'),
+			getMainShopLocation = $select('#main-shop-location'),
+			getMenu = $select('#main-coffee-choice'),
+			getSocialLinksEles = [...$selectAll('.social-links')],
+			// get liShopNames and coffeeShops(import from shop.js) into 2d array
+			getCoffeeShopNames = get2dArray(liShopNames, coffeeShops),
+			getRandomShop = coffeeShops[Math.floor(Math.random() * coffeeShops.length)],
+			// get random shop's index
+			getRandomShopIndex = coffeeShops.indexOf(getRandomShop);
 
 function getCafeContent(index) {
   // get random shop's obj
   let getShopObj = coffeeShops[index],
-    // get random shop obj's links and map into a array
-    getShopObjLinks = Object.values(getShopObj.socialLinks).map(i => i),
-    // get getSocialLinksEles and getShopObjLinks into 2d array
-    get2dSocialAry = get2dArray(getSocialLinksEles, getShopObjLinks);
+			// get random shop obj's links and map into a array
+			getShopObjLinks = Object.values(getShopObj.socialLinks).map(i => i),
+			// get getSocialLinksEles and getShopObjLinks into 2d array
+			get2dSocialAry = get2dArray(getSocialLinksEles, getShopObjLinks);
 
   // map out all cafe names into liShopNames
   getCoffeeShopNames.map(i => {
@@ -77,7 +78,7 @@ function getCafeContent(index) {
   })
 }
 
-$event(window, 'DOMContentLoaded', getCafeContent(getRandomShopIndex), false);
+$event(window, 'DOMContentLoaded', getCafeContent(getRandomShopIndex));
 
 let getCurrentIndex = getRandomShopIndex;
 
