@@ -1,29 +1,14 @@
 header#header-section {
-	@include wh(normal, $header-width, 100%);
+	min-width: $header-width;
+	height: 100%;
 	flex: 1;
 	position: relative;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 
-	div#header-nav {
-		@include flex(center, center);
-		@include wh(normal, $header-width, 15%);
-		position: relative;
-		background: #ECFAFB;
-
-		h1 {
-			font-size: 2rem;
-		}
-	}
-
-	div#header-content-wrap {
-		@include wh(normal, $header-width, 85%);
-		position: relative;
-		overflow: hidden;
-
-		div#header-content-1 {
-			@include wh(normal, $header-width, 100%);
+	div#header-content {
+			@include wh(normal, $header-width, 95%);
 			position: relative;
 			background: #fff;
 			display: flex;
@@ -34,6 +19,7 @@ header#header-section {
 				@include wh(normal, 100%, 20rem);
 				@include flex(flex-end,center);
 				padding-right: 1rem;
+
 				ul {
 					margin: 0;
 					padding: 0;
@@ -54,60 +40,19 @@ header#header-section {
 					}
 				}
 			}
-		}
 	}
 
 	div#header-footer {
 		@include flex(center, center);
 		@include wh(normal, $header-width, 5%);
 		position: relative;
-		background: #ECFAFB;
+		background: #FF895D;
 
-		p {
+		h1 {
 			margin: 0;
-			color: #333;
+			color: #FFFDE1;
+			font-size: 1.4rem;
+			letter-spacing: 2px;
 		}
-	}
-}
-@keyframes bgFill {
-	0% {
-		transform: translateX(-50%);
-	}
-
-	25% {
-		transform: translateX(0);
-	}
-
-	50% {
-		transform: translateX(0);
-	}
-
-	75% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(100%);
-	}
-}
-@keyframes bgUnFill {
-	0% {
-		transform: translateX(50%);
-	}
-
-	25% {
-		transform: translateX(0);
-	}
-
-	50% {
-		transform: translateX(0);
-	}
-
-	75% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(-100%);
 	}
 }
