@@ -1,0 +1,26 @@
+/* laptop xl or desktop */
+@media screen and (max-width: 1440px) {}
+/* laptop lg */
+@media screen and (max-width: 1200px) {}
+/* laptop lg */
+@media screen and (max-width: 992px) {
+	figure#figure-section {
+		@include wh(normal, 100%, 100%);
+		@include gridColRow(col-1, col-2, row-2, row-3);
+	}
+}
+/* tablet */
+@media screen and (max-width: 768px) {}
+/* mobile lg */
+@media screen and (max-width: 576px) {
+	figure#figure-section {
+		@include wh(normal, 100%, 100%);
+		@include gridColRow(col-1, col-2, row-2, row-3);
+	}
+}
+/* mobile lg */
+@media screen and (max-width: 425px) {}
+/* mobile md */
+@media screen and (max-width: 375px) {}
+/* mobile sm */
+@media screen and (max-width: 320px) {}

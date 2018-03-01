@@ -1,19 +1,18 @@
 figure#figure-section {
-	flex: 4;
-	width: 100%;
-	height: 100%;
+	@include wh;
+	@include gridColRow(col-2, col-3, row-1, row-2);
+	margin: 0;
 	position: relative;
 	background-repeat: no-repeat;
-	background-position: 0% center;
+	background-position: 0 center;
 	background-size: cover;
 	animation: loopBg 9s ease-in-out alternate infinite;
 }
-
-
 @keyframes loopBg {
 	0% {
-		background-position: 0% center;
+		background-position: 0 center;
 	}
+
 	100% {
 		background-position: 100% center;
 	}

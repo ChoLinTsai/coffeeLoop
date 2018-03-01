@@ -1,0 +1,30 @@
+/* laptop xl or desktop */
+@media screen and (max-width: 1440px) {}
+/* laptop lg */
+@media screen and (max-width: 1200px) {}
+/* laptop lg */
+@media screen and (max-width: 992px) {
+	div#master-wrap {
+		@include wh(normal, 100%, 100vh);
+		display: grid;
+		grid-template-columns: [col-1] 2fr [col-2] 1fr [col-3];
+		grid-template-rows: [row-1] 300px [row-2] 1fr;
+	}
+}
+/* tablet */
+@media screen and (max-width: 768px) {}
+/* mobile lg */
+@media screen and (max-width: 576px) {
+	div#master-wrap {
+		@include wh;
+		display: grid;
+		grid-template-columns: [col-1] 1fr [col-2];
+		grid-template-rows: [row-1] 200px [row-2] 500px [row-3] 1fr [row-4];
+	}
+}
+/* mobile lg */
+@media screen and (max-width: 425px) {}
+/* mobile md */
+@media screen and (max-width: 375px) {}
+/* mobile sm */
+@media screen and (max-width: 320px) {}

@@ -1,0 +1,113 @@
+/* laptop xl or desktop */
+@media screen and (max-width: 1440px) {
+	main#main-section {
+		section#main-header {
+			h1#main-shop-name {
+				font-size: 2.75rem;
+			}
+
+			h2#main-shop-location {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+/* laptop lg */
+@media screen and (max-width: 1200px) {}
+/* laptop lg */
+@media screen and (max-width: 992px) {
+	main#main-section {
+		@include wh(normal, 100%, 100%);
+		@include gridColRow(col-2, col-3, row-2, row-3);
+		display: grid;
+		grid-template-columns: [col-1] 1fr [col-2];
+		grid-template-rows: [row-1] 1fr [row-2] 3fr [row-3] 100px [row-4];
+
+		section#main-header {
+			@include wh(normal, 100%, 100%);
+			@include gridColRow(col-1, col-2, row-1, row-2);
+
+			h1#main-shop-name {
+				font-size: 2rem;
+			}
+
+			h2#main-shop-location {
+				font-size: 1.15rem;
+			}
+		}
+
+		section#main-body {
+			@include wh(normal, 100%, 100%);
+			@include gridColRow(col-1, col-2, row-2, row-3);
+
+			h3 {
+				font-size: 1.5rem;
+			}
+
+			ul#main-coffee-choice {
+				li {
+					font-size: 1.25rem;
+				}
+			}
+		}
+
+		section#main-footer {
+			@include wh(normal, 100%, 100%);
+			@include gridColRow(col-1, col-2, row-3, row-4);
+			padding: 0.5rem;
+		}
+	}
+}
+/* tablet */
+@media screen and (max-width: 768px) {}
+/* mobile lg */
+@media screen and (max-width: 576px) {
+	main#main-section {
+		@include wh(normal, 100%, 100%);
+		@include gridColRow(col-1, col-2, row-3, row-4);
+		display: grid;
+		grid-template-columns: [col-1] 1fr [col-2];
+		grid-template-rows: [row-1] 1fr [row-2] 3fr [row-3] 100px [row-4];
+
+		section#main-header {
+			@include wh(normal, 100%, 100%);
+			@include gridColRow(col-1, col-2, row-1, row-2);
+
+			h1#main-shop-name {
+				font-size: 2rem;
+			}
+
+			h2#main-shop-location {
+				font-size: 1.15rem;
+			}
+		}
+
+		section#main-body {
+			@include wh(normal, 100%, 100%);
+			@include gridColRow(col-1, col-2, row-2, row-3);
+
+			h3 {
+				font-size: 1.5rem;
+			}
+
+			ul#main-coffee-choice {
+				li {
+					font-size: 1.25rem;
+				}
+			}
+		}
+
+		section#main-footer {
+			@include wh(normal, 100%, 100%);
+			@include gridColRow(col-1, col-2, row-3, row-4);
+			padding: 0.5rem;
+			justify-content: center;
+		}
+	}
+}
+/* mobile lg */
+@media screen and (max-width: 425px) {}
+/* mobile md */
+@media screen and (max-width: 375px) {}
+/* mobile sm */
+@media screen and (max-width: 320px) {}
