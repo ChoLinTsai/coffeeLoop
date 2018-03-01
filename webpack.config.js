@@ -145,15 +145,15 @@ module.exports = {
 		]
 	},
 	devServer: {
-		contentBase: path.join(__dirname, "dist"),
+		contentBase: path.join(__dirname, "./src"),
 	  compress: true,
-		// hot: true,
+		hot: true,
 		stats: "errors-only",
 		// open: true,
 	},
 	plugins: [
-		// new webpack.HotModuleReplacementPlugin(),
-		// new webpack.NamedModulesPlugin(),
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NamedModulesPlugin(),
 		new HtmlWebpackPlugin({
 			title: 'Coffee Loop',
 			template: './src/index.html',

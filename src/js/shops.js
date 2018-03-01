@@ -6,7 +6,7 @@ import shop5img from '../img/coffee-shop-5.jpg';
 
 const coffeeShop1 = {
   name: 'Verve',
-  location: '8925 Melrose Avenue West Hollywood, CA 90069',
+  location: '8925 Melrose Avenue West Hollywood, CA',
   menu: [
     "Verve Speical",
     "Black / Americano",
@@ -26,7 +26,7 @@ const coffeeShop1 = {
 
 const coffeeShop2 = {
   name: 'Blue Bottle',
-  location: '2 S Park St, San Francisco, CA 94107',
+  location: '2 S Park St, San Francisco, CA',
   menu: [
     "Blue Speical",
     "Caffè Latte",
@@ -47,7 +47,7 @@ const coffeeShop2 = {
 
 const coffeeshop3 = {
   name: 'Fabryka Kary',
-  location: "Ostafiya Dashkovycha St, 19, Cherkasy, Cherkas'ka oblast, Ukraine 18000",
+  location: "Cherkasy Ukraine",
   menu: [
     "Ukraine Speical",
     "Latte",
@@ -67,7 +67,7 @@ const coffeeshop3 = {
 
 const coffeeshop4 = {
   name: 'Black Dog',
-  location: "12815 W 87th Street PKWY Lenexa, KS 66215",
+  location: "W 87th Street PKWY Lenexa, KS",
   menu: [
     "Black Dog Speical",
     "Black / Americano",
@@ -88,7 +88,7 @@ const coffeeshop4 = {
 
 const coffeeshop5 = {
   name: 'CoCo Bean',
-  location: "1114 Environ Way, Chapel Hill, NC 27517",
+  location: "1114 Environ Way, Chapel Hill, NC",
   menu: [
     "Bean Speical",
     "Black / Americano",

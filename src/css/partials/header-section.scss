@@ -1,50 +1,52 @@
 header#header-section {
-	min-width: $header-width;
-	height: 100%;
-	flex: 1;
+	@include gridColRow(col-1, col-2, row-1, row-2);
+	@include wh;
 	position: relative;
 	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: [col-1] 1fr [col-2];
+	grid-template-rows: [row-1] 1fr [row-2] 50px [row-3];
 
 	div#header-content {
-			@include wh(normal, $header-width, 95%);
-			position: relative;
-			background: #fff;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+		@include wh;
+		@include gridColRow(col-1, col-2, row-1, row-2);
+		position: relative;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
-			div#ul-wrap {
-				@include wh(normal, 100%, 20rem);
-				@include flex(flex-end,center);
-				padding-right: 1rem;
+		div#ul-wrap {
+			@include wh(normal, 100%, 20rem);
+			@include flex(flex-end,center);
+			padding-right: 0.5rem;
 
-				ul {
-					margin: 0;
-					padding: 0;
+			ul {
+				margin: 0;
+				padding: 0;
 
-					a {
-						cursor: pointer;
-						display: block;
-						text-decoration: none;
-						margin-bottom: 1rem;
+				a {
+					cursor: pointer;
+					display: block;
+					text-decoration: none;
+					margin-bottom: 1rem;
 
-						li.li-shop-name {
-							color: #333;
-							list-style: none;
-							font-size: 1.25rem;
-							letter-spacing: 2.5px;
-							text-align: right;
-						}
+					li.li-shop-name {
+						color: #333;
+						list-style: none;
+						font-size: 1.25rem;
+						letter-spacing: 2.5px;
+						text-align: right;
 					}
 				}
 			}
+		}
 	}
 
 	div#header-footer {
+		@include wh;
+		@include gridColRow(col-1, col-2, row-2, row-3);
 		@include flex(center, center);
-		@include wh(normal, $header-width, 5%);
 		position: relative;
 		background: #FF895D;
 
