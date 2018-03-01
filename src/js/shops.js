@@ -1,8 +1,9 @@
-import shop1img from '../img/coffee-shop-1.jpg';
-import shop2img from '../img/coffee-shop-2.jpg';
-import shop3img from '../img/coffee-shop-3.jpg';
-import shop4img from '../img/coffee-shop-4.jpg';
-import shop5img from '../img/coffee-shop-5.jpg';
+import coffeeimg1 from '../img/coffee-shop-1.jpg';
+import coffeeimg2 from '../img/coffee-shop-2.jpg';
+import coffeeimg3 from '../img/coffee-shop-3.jpg';
+import coffeeimg4 from '../img/coffee-shop-4.jpg';
+import coffeeimg5 from '../img/coffee-shop-5.jpg';
+
 
 const coffeeShop1 = {
   name: 'Verve',
@@ -15,7 +16,7 @@ const coffeeShop1 = {
     "Cappuccino",
     "Espresso"
   ],
-  figure: shop1img,
+  figure: coffeeimg1,
   socialLinks: {
     facebook: "https://www.facebook.com/vervecoffee",
     instagram: "https://www.instagram.com/vervecoffee/",
@@ -36,7 +37,7 @@ const coffeeShop2 = {
     "Macchiato",
     "Affogato"
   ],
-  figure: shop2img,
+  figure: coffeeimg2,
   socialLinks: {
     facebook: "https://www.facebook.com/bluebottlecoffee",
     instagram: "https://www.instagram.com/bluebottle/",
@@ -56,7 +57,7 @@ const coffeeshop3 = {
     "Espresso",
     "Macchiato"
   ],
-  figure: shop3img,
+  figure: coffeeimg3,
   socialLinks: {
     facebook: "https://www.facebook.com/fabryka.kavy.che/",
     instagram: "https://www.instagram.com/fabryka_kavy_ck/",
@@ -77,7 +78,7 @@ const coffeeshop4 = {
     "Espresso",
     "Macchiato"
   ],
-  figure: shop4img,
+  figure: coffeeimg4,
   socialLinks: {
     facebook: "https://www.facebook.com/bdcoffeehouse",
     instagram: "https://www.instagram.com/bdcoffeehouse/",
@@ -98,7 +99,7 @@ const coffeeshop5 = {
     "Cortado",
     "Cappuccino"
   ],
-  figure: shop5img,
+  figure: coffeeimg5,
   socialLinks: {
     facebook: "https://www.facebook.com/cocobeancoffee",
     instagram: "https://twitter.com/cocobeancoffee",
